@@ -14,3 +14,7 @@ app.use("/api/leaves", require("./routes/leaveRoutes"));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+
+app.use("/",(req,res)=>{
+    res.send("<h1>welcome to leave management system</h1>");
+})
