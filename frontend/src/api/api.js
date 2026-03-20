@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  // baseURL: "http://localhost:5000/api"
+  //  baseURL: "http://localhost:5000/api"
   baseURL:import.meta.env.VITE_API_BASE_URL
+  // baseURL: "https://leave-management-system-acqu.onrender.com/api"
 });
 
 API.interceptors.request.use((req) => {
